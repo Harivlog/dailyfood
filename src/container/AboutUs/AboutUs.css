@@ -1,0 +1,129 @@
+.about-sct{
+    display: grid;
+    grid-template-columns: 1fr 20% 1fr;
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-image: url('../../constants/images.js/G'); */
+}
+.about-sec-img{
+    
+    width: 24%;
+    height: 500px;
+}
+.about-sec-us{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: right;
+}
+.about-sec-us h4{
+    color: #fff;
+    margin-bottom: 1.3rem;
+}
+
+.about-sec-history{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+}
+.about-sec-history h4{
+    margin-bottom: 1.3rem;
+    color: #fff;
+}
+.about-sec-knife{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width : 2000px){
+    .about-sec-us h4{
+        font-size: 2rem;
+    }
+
+    .about-sec-history h4{
+        font-size: 2rem;
+    }
+    .about-sec-img{
+        
+        width: 24%;
+        height: 600px;
+    }      
+}
+@media screen and (max-width : 1150px){
+    
+}
+@media screen and (max-width : 850px){
+    .about-sct{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 ,1fr);
+        background-size: 35%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* background-image: url('../../constants/images.js/G'); */
+    }
+    .about-sec-us{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        text-align: left;
+        padding: 1.2rem;
+    }
+    .about-sec-history{
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem;
+     
+        /* align-items: center; */
+        flex-direction: column;
+        text-align: left;
+    }
+    .about-sec-img{
+    
+        width: 13%;
+        height: 600px;
+    }
+        
+}
+@media screen and (max-width : 650px){
+    .about-sec-img{
+    
+        width: 12%;
+        height: 370px;
+        transform: rotate(270deg);
+    }    
+    .about-sct{
+        /* background: red; */
+     }
+}
+@media screen and (max-width : 450px){
+    .about-sec-img{
+    
+        width: 12%;
+        height: 300px;
+        transform: rotate(270deg);
+        
+    }    
+    .about-sct{
+       /* background: red; */
+    }
+    .about-sct{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 ,1fr);
+        background-size: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* background-image: url('../../constants/images.js/G'); */
+    }
+
+}

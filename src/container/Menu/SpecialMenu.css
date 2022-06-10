@@ -1,0 +1,136 @@
+.sp__menu-section{
+    flex-direction: column;
+    width: 100%;
+    /* border: 2px solid white; */
+}
+.sp__menu_main-heading h4{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.sp__menu_main-heading h1{
+    color: var(--color-golden);
+    font-size: 3.7rem;
+    font-family: var(--font-base);
+}
+.sp__menu-list{
+    margin-top: 2.2rem;
+    /* margin-bottom: 2.2rem; */
+    display: grid;
+    
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sp__menu-img img{
+    width: 80%;
+    height: 500px;
+}
+.sp__menu-item-details{
+    padding: 1.3rem;
+    width: 100%;
+
+}
+.sp__menu-item-details h2,
+.sp__menu-item-details h2
+{
+    color: #fff;
+    text-align: center;
+    font-family: var(--color-golden);
+    font-size: 2rem;
+    margin-top: 2.2rem;
+}
+.sp__menu_deshes-list{
+    
+    width: 100%;
+}
+.sp__menu_deshes-list ul,
+.sp__menu_drinks-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sp_menu_drink_list-item{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+.sp_menu_drink_list-item h3{
+    color: var(--color-golden);
+    font-weight: 800;
+}
+.sp__menu_drinks-list p{
+    color: #fff;
+    font-family: var(--font-alt);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+@media  (max-width:1999px) and (min-width : 1300px ) {
+    
+    
+    .sp__menu_main-heading h4{
+       font-size: 2rem;
+    }
+    .sp__menu_main-heading h1{
+        font-size: 4.5rem;
+    }
+    .sp__menu-list{
+        margin-top: 2.2rem;
+        /* margin-bottom: 2.2rem; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+    }
+    .sp__menu-img img{
+        width: 100%;
+        height: 630px;
+    }  
+    .sp__menu-img img{
+        width: 70%;
+        height: 500px;
+    }
+}
+@media screen and (min-width : 2000px){
+    .sp__menu_main-heading h4{
+       font-size: 1.5rem;
+    }
+    .sp__menu_main-heading h1{
+        font-size: 4.5rem;
+    }
+    .sp__menu-list{
+        margin-top: 2.2rem;
+        /* margin-bottom: 2.2rem; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+    }
+    .sp__menu-img img{
+        width: 100%;
+        height: 700px;
+    }
+  }
+  @media screen and (max-width : 1150px){
+    .sp__menu-list{
+        margin-top: 2.2rem;
+        /* margin-bottom: 2.2rem; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr , 3);
+    }    
+    .sp__menu-img img{
+        width: 60%;
+        height: 500px;
+    }
+}
+@media screen and (max-width : 850px){
+     
+  
+  }
+  @media screen and (max-width : 650px){
+       
+  }

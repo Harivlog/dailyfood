@@ -1,0 +1,78 @@
+.laurels_sect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lau_sect_cnt-leftBx h4{
+    color: #fff;
+}
+.lau_sect_cnt-rightBx img{
+    width:  80%;
+    height: 500px;
+}
+.lau_sect_cnt_leftBx-Awards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.lau_sect_cnt-left_Awards-img {
+    gap: 2;
+
+}
+.lau_sect_cnt_leftBx_Awards-img img{
+    height : 80px;
+    width: 80px;
+}
+.awards-list-text{
+    padding-left: 1rem;
+}
+.awards-list-text h2{
+    font-size: 1.3rem;
+}
+@media screen and (min-width : 2000px){
+    .lau_sect_cnt_leftBx-Awards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+    .lau_sect_cnt-rightBx img{
+        width:  80%;
+        height: 800px;
+    }    
+    .lau_sect_cnt-leftBx h4{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .awards-list-text h2{
+        font-size: 1.6rem;
+    }
+    .lau_sect_cnt_leftBx_Awards-img img{
+        height : 80px;
+        width: 100px;
+    }
+  }
+  @media screen and (max-width : 1150px){
+      
+}
+@media screen and (max-width : 850px){
+    .laurels_sect{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(2 , 1fr);
+    }
+    .lau_sect_cnt_leftBx-Awards{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(1fr ,2);
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    
+  }
+  @media screen and (max-width : 650px){
+    .lau_sect_cnt-rightBx img{
+        width:  100%;
+        height: 400px;
+    }       
+  }
