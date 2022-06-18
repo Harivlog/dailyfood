@@ -5,7 +5,7 @@ import './Laurels.css';
 
 const Laurels = () => (
   <>
-     <section className="section__padding laurels_sect">
+     <section className="section__padding laurels_sect" id='laurels'>
        
                             <div className="lau_sect_cnt-leftBx ">
                    <h4>

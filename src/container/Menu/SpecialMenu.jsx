@@ -5,7 +5,7 @@ import {images , data } from '../../constants'
 import {SubHeading } from '../../components'
 const SpecialMenu = () => (
   <>
-   <section className="sp__menu-section flex__center section__padding">
+   <section className="sp__menu-section flex__center section__padding" id='menu'>
        <div className="sp__menu_main-heading">
          <h4>
            <SubHeading Dta="Menu That Fits You Pallatter" color="#fff"/>

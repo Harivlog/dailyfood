@@ -5,7 +5,7 @@ import './Chef.css';
 
 const Chef = () => (
   <>
-        <section className="Chef-sitn section__padding">
+        <section className="Chef-sitn section__padding" id='chef'>
           <div className="chif_sitn-img">
             <img src={images.chef} alt="Chef img" />  
           </div>
