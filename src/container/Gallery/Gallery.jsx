@@ -19,7 +19,7 @@ const Gallery = () => {
   const scrollRef = useRef(null)
   return(
   <>
-    <section className='app__gallery flex__center'>
+    <section className='app__gallery flex__center' id='gallery'>
       <div className="app__gallery-content">
          <h4> <SubHeading Dta={"Instagram"}/></h4>
          <h1 className='headtext__cormorant'>Photo Gallery</h1>
