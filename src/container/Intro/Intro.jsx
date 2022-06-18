@@ -17,7 +17,7 @@ const Intro = () => {
    }
   return(
   <>
-    <section className="video-sctn app__video">
+    <section className="video-sctn app__video" id='intro'>
       <video
       src={meal}
       ref={vidRef}
@@ -27,7 +27,7 @@ const Intro = () => {
       muted
       />
       <div className="flex__center app_video_overlay">
-        <div className="7777777777777777777 98888888888999999999//33.....33.flex__center" onClick={VideoHundle}>
+        <div className="flex__center" onClick={VideoHundle}>
             {PlayVideo ? (
               <BsPauseFill  color='#fff' fontSize={30}/>
             ) : <BsFillPlayFill color='#fff' fontSize={30}/>}        
