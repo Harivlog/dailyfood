@@ -14,20 +14,20 @@ const Navbar = () => {
          <img src={images.gericht} alt="logo-foodwebsite" />
        </div>
        <ul className="nav_menu flex__center">
-           <li className='p__opensans'><Link to="/">Home</Link></li>
-           <li className='p__opensans'><Link to="/about">About</Link></li>
-           <li className='p__opensans'><Link to="menu">Menu</Link></li>
+           <li className='p__opensans'><a href="#home">Home</a></li>
+           <li className='p__opensans'><a href="#about">About</a></li>
+           <li className='p__opensans'><a href="#menu">Menu</a></li>
           
-           <li className='p__opensans'><Link to="/gallery">Gallery</Link></li>
-           <li className='p__opensans'><Link to="intro">Intro</Link></li>
-           <li className='p__opensans'><Link to="chef">Chef</Link></li>
+           <li className='p__opensans'><a href="#gallery">Gallery</a></li>
+           <li className='p__opensans'><a href="#intro">Intro</a></li>
+           <li className='p__opensans'><a href="#chef">Chef</a></li>
            
-           <li className='p__opensans'><Link to="laurels">Laurels</Link></li>
+           <li className='p__opensans'><a href="#laurels">Laurels</a></li>
        </ul>
        <ul className=" flex__center nav_login_wrap">
-          <li><Link  to="">Login Registration</Link></li>
+          <li><a  href="">Login Registration</a></li>
           <li><div style={{color : 'white'}}>|</div></li>
-          <li><Link  to="">Book Table</Link></li>
+          <li><a  href="">Book Table</a></li>
        </ul>
        <div className='app__navbar_smallscreen' >
          <GiHamburgerMenu color="#fff" fontSize={27} onClick={()=> {setToggleNav(true)}}></GiHamburgerMenu>
@@ -36,12 +36,16 @@ const Navbar = () => {
            toggleNav && (
            <div className='app__navbar_smallscreen_overlay flex__center slide_bottom'>
            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={()=> {setToggleNav(false)}}/>
-         <ul className="app__navbar_smallscreen-link">
-           <li className='p__opensans'><Link to="">Home</Link></li>
-           <li className='p__opensans'><Link to="">Pages</Link></li>
-           <li className='p__opensans'><Link to="">Contact us</Link></li>
-           <li className='p__opensans'><Link to="">Blog</Link></li>
-           <li className='p__opensans'><Link to="">Laurels</Link></li>
+         <ul className="app__navbar_smallscreen-link" onClick={()=> setToggleNav(false)}>
+         <li className='p__opensans'><a href="#home">Home</a></li>
+           <li className='p__opensans'><a href="#about">About</a></li>
+           <li className='p__opensans'><a href="#menu">Menu</a></li>
+          
+           <li className='p__opensans'><a href="#gallery">Gallery</a></li>
+           <li className='p__opensans'><a href="#intro">Intro</a></li>
+           <li className='p__opensans'><a href="#chef">Chef</a></li>
+           
+           <li className='p__opensans'><a href="#laurels">Laurels</a></li>
        </ul>
          </div>)
          }

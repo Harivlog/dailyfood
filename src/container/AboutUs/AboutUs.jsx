@@ -5,7 +5,7 @@ import images from '../../constants/images'
 import SubHeading from '../../components/SubHeading/SubHeading';
 const AboutUs = () => (
   <>
-    <section className="section__padding about-sct" style={{backgroundImage : `url(${images.G})` , backgroundRepeat : 'no-repeat'}}>
+    <section className="section__padding about-sct" style={{backgroundImage : `url(${images.G})` , backgroundRepeat : 'no-repeat'}} id="about">
            
           <div className='about-sec-us'>
           <h4>
